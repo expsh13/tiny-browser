@@ -6,6 +6,27 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 A minimal TUI browser for learning browser rendering. Renders HTML/CSS to the terminal using block layout only.
 
+## Learning Resources
+
+This project follows **"Let's build a browser engine!"** by Matt Brubeck:
+https://limpet.net/mbrubeck/2014/08/08/toy-layout-engine-1.html
+
+Reference material for deeper understanding:
+- [How Browsers Work (web.dev)](https://web.dev/articles/howbrowserswork?hl=ja)
+- [Inside look at modern web browsers (Chrome)](https://developer.chrome.com/blog/inside-browser-part1?hl=ja)
+
+### Tutorial to Module Mapping
+
+| Tutorial Part | Module | Status |
+|---------------|--------|--------|
+| Part 1: Getting Started | Project setup | ✅ |
+| Part 2: HTML | `Parser/HTML.hs`, `DOM.hs` | 🔲 |
+| Part 3: CSS | `Parser/CSS.hs` | 🔲 |
+| Part 4: Style | `Style.hs` | 🔲 |
+| Part 5: Boxes | `Layout.hs` | 🔲 |
+| Part 6: Block Layout | `Layout.hs` | 🔲 |
+| Part 7: Painting | `Render.hs` | 🔲 |
+
 ## Build Commands
 
 ```bash

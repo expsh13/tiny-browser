@@ -53,6 +53,15 @@ extra-doc-files:    CHANGELOG.md
 common warnings
     ghc-options: -Wall
 
+library
+    import:           warnings
+    exposed-modules:  Dom
+    hs-source-dirs:   src
+    build-depends:    base ^>=4.18.3.0
+                    , mtl
+                    , containers
+    default-language: Haskell2010
+
 executable tiny-browser
     -- Import common warning flags.
     import:           warnings
@@ -67,8 +76,8 @@ executable tiny-browser
     -- other-extensions:
 
     -- Other library packages from which modules are imported.
-    build-depends:    base ^>=4.18.3.0
-
+    build-depends:  base ^>=4.18.3.0
+                    ,tiny-browser
     -- Directories containing source files.
     hs-source-dirs:   app
 
