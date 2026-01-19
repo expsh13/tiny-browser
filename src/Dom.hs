@@ -1,4 +1,4 @@
-module Dom (element) where
+module Dom where
 
 import qualified Data.Map as Map
 

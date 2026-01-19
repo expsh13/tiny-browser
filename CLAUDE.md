@@ -20,8 +20,8 @@ Reference material for deeper understanding:
 | Tutorial Part | Module | Status |
 |---------------|--------|--------|
 | Part 1: Getting Started | Project setup | ✅ |
-| Part 2: HTML | `Parser/HTML.hs`, `DOM.hs` | 🔲 |
-| Part 3: CSS | `Parser/CSS.hs` | 🔲 |
+| Part 2: HTML | `Parser/Html.hs`, `Dom.hs` | ✅ |
+| Part 3: CSS | `Parser/Css.hs` | 🔲 |
 | Part 4: Style | `Style.hs` | 🔲 |
 | Part 5: Boxes | `Layout.hs` | 🔲 |
 | Part 6: Block Layout | `Layout.hs` | 🔲 |
@@ -51,9 +51,9 @@ CSS  → Parser → Stylesheet
 
 ### Module Structure
 
-- `src/DOM.hs` - DOM tree data types
-- `src/Parser/HTML.hs` - HTML parser (megaparsec)
-- `src/Parser/CSS.hs` - CSS parser (megaparsec)
+- `src/Dom.hs` - DOM tree data types
+- `src/Parser/Html.hs` - HTML parser (hand-written recursive descent)
+- `src/Parser/Css.hs` - CSS parser (hand-written recursive descent)
 - `src/Style.hs` - Style computation (selector matching)
 - `src/Layout.hs` - Block layout algorithm
 - `src/Render.hs` - Terminal rendering with ANSI colors
