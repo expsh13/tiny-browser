@@ -57,6 +57,7 @@ library
     import:           warnings
     exposed-modules:  Dom
                     , Parser.Html
+                    , Parser.Css
     hs-source-dirs:   src
     build-depends:    base ^>=4.18.3.0
                     , mtl
